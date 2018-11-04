@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Natural</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../assets/logo.ico"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <link href="../jquery/dist/jqvmap.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+  <!-- map -->
+  <div class="logo">
+      <i class="fas fa-frog"></i>
+      <h1>Natural</h1>
+  </div>
+  <div id="vmap"></div>
+
+  <!-- model -->
+  <div id="model">
+    <h1 id="namecountry">Cambodia</h1>
+    <a href="./about.html" data-toggle="tooltip" title="About Developer"><i class="fas fa-user"></i></a>
+    <button class="close" onclick="closeModel()" data-toggle="tooltip" title="Close Model">X</button>
+    <div class="result">
+      <ul class="menu">
+        <li onclick="changNarture('leaf')" data-toggle="tooltip" title="Forest"><i class="fas fa-leaf"></i></li>
+        <li onclick="changNarture('fire')" data-toggle="tooltip" title="Hot"><i class="fas fa-fire"></i></li>
+        <li onclick="changNarture('snow')" data-toggle="tooltip" title="Cold"><i class="fas fa-snowflake"></i></li>
+        <li onclick="changNarture('tint')" data-toggle="tooltip" title="Water"><i class="fas fa-tint"></i></li>
+      </ul>
+    </div>
+    <div class="data">
+      <div style="display: flex;" id="list"></div>
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+  </script>
+  <script src="../js/narture.js"></script>
+  <script src="../jquery/dist/jquery.vmap.js"></script>
+  <script src="../jquery/dist/maps/jquery.vmap.world.js"></script>
+  <script src="../jquery/examples/js/jquery.vmap.sampledata.js"></script>
+  <script src="../js/map.js"></script>
+  <script src="../js/model.js"></script>
+</body>
+
+</html>
